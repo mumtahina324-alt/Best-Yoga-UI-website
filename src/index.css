@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@import "tailwindcss";
+
+@theme {
+  --font-ProtestStrike: "Protest Strike", sans-serif;
+  --font-Outfit: "Outfit", sans-serif;
+  --color-primary: #1a9686;
+  --color-secondary: #ffffff;
+  --color-tertiary: #000000;
+}
+@layer base {
+  html {
+    @apply transition-colors duration-300;
+  }
+}
+
+@layer utilities {
+  .text-primary {
+    @apply text-[var(--color-primary)];
+  }
+  .text-secondary {
+    @apply text-[var(--color-secondary)];
+  }
+  .text-tertiary {
+    @apply text-[var(--color-tertiary)];
+  }
+  .font-ProtestStrike {
+    @apply font-ProtestStrike;
+  }
+  .font-Outfit {
+    @apply font-Outfit;
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 10s linear infinite;
+}
