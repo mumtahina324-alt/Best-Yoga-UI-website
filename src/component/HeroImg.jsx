@@ -3,7 +3,7 @@ import hero from "../../src/assets/image/yoga-1.png";
 
 export default function HeroImg() {
   return (
-    <div className="relative flex justify-center items-center min-h-[350px] sm:min-h-[420px] lg:min-h-[500px]">
+    <div className="relative flex justify-center items-center min-h-87.5 sm:min-h-105 lg:min-h-125">
       {/* Spinning Mandala */}
       <img
         src={mandala}
